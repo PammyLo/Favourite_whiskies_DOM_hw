@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Favourite Whiskies</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <p class="welcome">Create your list of favourite whiskies:<p>
+
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="Name" class="primary">Title</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="type" class="primary">Type</label>
+          <select id="type">
+            <option value="" disabled selected></option>
+            <option value="Single Malt">Single Malt</option>
+            <option value="Blended">Blended</option>
+            <option value="Grain">Grain</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="region" class="primary">Category</label>
+          <select id="region">
+            <option value="" disabled selected></option>
+            <option value="Speyside">Speyside</option>
+            <option value="Highlands">Highlands</option>
+            <option value="Lowlands">Lowlands</option>
+            <option value="Islay">Islay</option>
+            <option value="Campbeltown">Campbeltown</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h1>My Favourite Whiskies</h1>
+
+    <div id="whisky-list">
+    </div>
+    
+    <input id="delete" type="button" name="delete-all" value="Delete All Books">
+
+  </body>
+
+</html>
