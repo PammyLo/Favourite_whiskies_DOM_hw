@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>Favourite Whiskies</title>
     <script src="js/app.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
   </head>
+
   <body>
-    <h1>Hello there!</h1>
-    <p class="welcome">Create your list of favourite whiskies:<p>
+    <h1>Create a list of your favourite whiskies</h1><br>
+    <h2>Go on, add your favourites: </h2>
 
     <form id="new-item-form">
       <div id="form-wrapper">
+
         <div class="form-item">
-          <label for="Name" class="primary">Name</label>
+          <label for="Name" class="primary">Name:</label>
           <input type="text" id="name" required/>
         </div>
 
         <div class="form-item">
-          <label for="type" class="primary">Type</label>
+          <label for="type" class="primary">Type:</label>
           <select id="type">
             <option value="" disabled selected></option>
             <option value="Single Malt">Single Malt</option>
@@ -28,7 +31,7 @@
         </div>
 
         <div class="form-item">
-          <label for="region" class="primary">Region</label>
+          <label for="region" class="primary">Region:</label>
           <select id="region">
             <option value="" disabled selected></option>
             <option value="Speyside">Speyside</option>
@@ -38,14 +41,17 @@
             <option value="Campbeltown">Campbeltown</option>
           </select>
         </div>
+
       </div>
-      <input type="submit" value="save"/>
+
+      <div class="button">
+        <input type="submit" value="save"/>
+      </div>
+
     </form>
 
-    <h1>My Favourite Whiskies</h1>
-
-    <div id="whisky-list">
-    </div>
+    <h1>My Favourites:</h1>
+    <div id="whisky-list"> </div>
 
     <input id="delete" type="button" name="delete-all" value="Clear all">
 
